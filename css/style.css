@@ -3,3 +3,54 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container{
+    text-align: center;
+    background-color: darkorange;
+    height: 100vh;
+    padding-top: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+    color: rgb(201, 13, 13);
+}
+
+
+.gioco{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.dadi{
+    color: rgb(122 20 175);
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+h3{
+    color: green;
+    font-size: 3.5em;
+    line-height: 1.4;
+}
+
+button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color:  rgb(201, 13, 13);
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#newgame{
+    visibility: hidden;
+    display: inline-block;
+    width: 200px;
+    margin-top: 20px;
+}
