@@ -14,6 +14,8 @@ buttonPlay.addEventListener("click", function () {
   punteggioYou.innerHTML = numRandomYou;
   punteggioCpu.innerHTML = numRandomCpu;
   newgame.style.visibility = "visible";
+  buttonPlay.style.display = "none";
+  // buttonPlay.style.visibility = "hidden";
 
   newgame.addEventListener("click", function () {
     location.reload();
