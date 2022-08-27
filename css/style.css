@@ -41,7 +41,7 @@ button{
     padding: 10px;
     width: 150px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color:  rgb(201, 13, 13);
     font-size: 20px;
     cursor: pointer;
@@ -68,4 +68,9 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#reload{
+    visibility: hidden; 
+    width: 250px;
 }
