@@ -55,3 +55,31 @@ ho provato ad utilizzare querySelectorAll al posto dei due ID (quadratosx e quad
 function numeroRandom30(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+const emails = [
+  "alessandroramo1@yahoo.it",
+  "alessandroramo2@yahoo.it",
+  "alessandroramo3@yahoo.it",
+  "alessandroramo4@yahoo.it",
+  "alessandroramo5@yahoo.it",
+  "alessandroramo6@yahoo.it",
+  "alessandroramo7@yahoo.it",
+  "alessandroramo8@yahoo.it",
+  "alessandroramo@yahoo9.it",
+  "alessandroramo@yahoo10.it",
+  "alessandroramoni@yahoo.it",
+  "alessandroramo11@yahoo.it",
+  "alessandroramo12@yahoo.it",
+];
+
+console.log(emails);
+
+let mailUtente = prompt("Inserisci la tua mail");
+
+for (i = 0; i < emails.length; i++) {
+  if (mailUtente === emails[i]) {
+    console.log("Benvenuto");
+  } else {
+    console.log("Non puoi entrare");
+  }
+}
