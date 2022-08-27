@@ -10,12 +10,21 @@ buttonPlay.addEventListener("click", function () {
   let result = document.getElementById("result");
   let newgame = document.getElementById("newgame");
   console.log(numRandomYou, numRandomCpu);
+  const quadratosx = document.getElementById("quadratosx");
+  const quadratodx = document.getElementById("quadratodx");
+  let numRandomRotate = Math.floor(Math.random() * 30) + 1;
 
   punteggioYou.innerHTML = numRandomYou;
   punteggioCpu.innerHTML = numRandomCpu;
   newgame.style.visibility = "visible";
   buttonPlay.style.display = "none";
   // buttonPlay.style.visibility = "hidden";
+  quadratosx.style.transform = `rotate(${numRandomRotate}deg)`;
+  quadratodx.style.transform = `rotate(${numRandomRotate}deg)`;
+
+  /*
+ho provato ad utilizzare querySelectorAll al posto dei due ID (quadrato sx e quadratodx) ma esce un allarme in console... why?!
+*/
 
   newgame.addEventListener("click", function () {
     location.reload();
