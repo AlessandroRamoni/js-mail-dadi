@@ -8,11 +8,11 @@ buttonPlay.addEventListener("click", function () {
   let punteggioYou = document.getElementById("punteggioYou");
   let punteggioCpu = document.getElementById("punteggioCpu");
   let result = document.getElementById("result");
-  let newgame = document.getElementById("newgame");
-  let reload = document.getElementById("reload");
   console.log(numRandomYou, numRandomCpu);
+
   const quadratosx = document.getElementById("quadratosx");
   const quadratodx = document.getElementById("quadratodx");
+
   // let numRandomRotate = Math.floor(Math.random() * 30) + 1;
 
   punteggioYou.innerHTML = numRandomYou;
@@ -32,11 +32,6 @@ buttonPlay.addEventListener("click", function () {
   /*
 ho provato ad utilizzare querySelectorAll al posto dei due ID (quadratosx e quadratodx) ma esce un allarme in console... why?!
 */
-
-  newgame.addEventListener("click", function () {
-    location.reload();
-  });
-
   if (numRandomYou > numRandomCpu) {
     result.innerHTML = "Hai vinto!";
     quadratosx.style.border = "8px solid green";
@@ -52,9 +47,21 @@ ho provato ad utilizzare querySelectorAll al posto dei due ID (quadratosx e quad
   }
 });
 
+let newgame = document.getElementById("newgame");
+newgame.addEventListener("click", function () {
+  location.reload();
+});
+
+let reload = document.getElementById("reload");
+reload.addEventListener("click", function () {
+  location.reload();
+});
+
 function numeroRandom30(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+////////////////// ESERCIZIO ARRAY EMAIL
 
 const emails = [
   "alessandroramo1@yahoo.it",
@@ -75,6 +82,9 @@ const emails = [
 console.log(emails);
 
 let mailUtente = prompt("Inserisci la tua mail");
+
+let found = emails.includes(mailUtente);
+console.log(found);
 
 for (i = 0; i < emails.length; i++) {
   if (mailUtente === emails[i]) {
